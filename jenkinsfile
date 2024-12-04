@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Checkout from SCM'){
             steps {
-                git branch: 'main', credentialsId: 'GitHub', url: 'https://github.com/Ngassa2/NextXRGroup'
+                git branch: 'main', url: 'https://github.com/Ngassa2/NextXRGroup'
             }
         }
         stage('Build Application'){
